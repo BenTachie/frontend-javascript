@@ -34,3 +34,18 @@ const director1: Director = {
 };
 
 console.log(director1);
+
+
+
+// This is the interface for the function named printTeacherFunction.
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+
+// This function takes a first name and a last name, and returns a formatted string
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName.charAt(0)}. ${lastName}`;  // Returns the first letter of firstName and the full lastName
+};
+
+console.log(printTeacher("John", "Doe"));// Example usage of the printTeacher function
